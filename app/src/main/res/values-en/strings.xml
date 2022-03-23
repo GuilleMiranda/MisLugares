@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Places</string>
+    <string name="mostrar">Show Places</string>
+    <string name="preferencias">Preferences</string>
+    <string name="acerca_de">About</string>
+    <string name="salir">Exit</string>
+    <string name="labelNombre">Name</string>
+    <string name="hintNombre">Name</string>
+    <string name="labelTipo">Type</string>
+    <string name="labelDireccion">Address</string>
+    <string name="hintDireccion">Address</string>
+    <string name="labelTelefono">Phone number</string>
+    <string name="hintTelefono">Phone number</string>
+    <string name="labelUrl">Url</string>
+    <string name="hintUrl">Url</string>
+    <string name="labelComentario"></string>
+    <string name="hintComentario"></string>
+
+</resources>

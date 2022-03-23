@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mis Lugares</string>
+    <string name="mostrar">MOSTRAR LUGARES</string>
+    <string name="preferencias">PREFERENCIAS</string>
+    <string name="acerca_de">ACERCA DE</string>
+    <string name="salir">SALIR</string>
+    <string name="labelNombre">Nombre</string>
+    <string name="hintNombre">Nombre</string>
+    <string name="labelTipo">Tipo</string>
+    <string name="labelDireccion">Direccion</string>
+    <string name="hintDireccion">Direccion</string>
+    <string name="labelTelefono">Telefono</string>
+    <string name="hintTelefono">Telefono</string>
+    <string name="labelUrl">Url</string>
+    <string name="hintUrl">Url</string>
+    <string name="labelComentario"></string>
+    <string name="hintComentario"></string>
+
+</resources>
