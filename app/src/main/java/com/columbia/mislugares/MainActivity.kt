@@ -1,19 +1,21 @@
 package com.columbia.mislugares
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        /* Crear interfaz con código */
-        /*
-            val texto = TextView(this)
-            testo.text = "Hola Android"
-            setContentView(texto)
-         */
-
         setContentView(R.layout.activity_main)
+
+        val bAcerca = findViewById<Button>(R.id.bAcercaDe)
+        bAcerca.setOnClickListener { lanzarAcercaDe(null) }
+    }
+
+    fun lanzarAcercaDe(view: View?) {
+        startActivity(Intent(this, Acerca::class.java))
     }
 }

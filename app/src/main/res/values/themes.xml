@@ -22,4 +22,8 @@
     <style name="EstiloBoton.Alternativo">
         <item name="android:textSize">@dimen/texto</item>
     </style>
+
+    <style name="dialogo" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>

@@ -13,7 +13,7 @@
     <string name="hintTelefono">Telefono</string>
     <string name="labelUrl">Url</string>
     <string name="hintUrl">Url</string>
-    <string name="labelComentario"></string>
-    <string name="hintComentario"></string>
-
+    <string name="labelComentario">Comentario</string>
+    <string name="hintComentario">Comentario</string>
+    <string name="acerca" >Este programa ha sido desarrollado como ejemplo para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
 </resources>
