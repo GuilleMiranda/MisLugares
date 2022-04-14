@@ -13,9 +13,16 @@ class MainActivity : AppCompatActivity() {
 
         val bAcerca = findViewById<Button>(R.id.bAcercaDe)
         bAcerca.setOnClickListener { lanzarAcercaDe(null) }
+
+        val bSalir = findViewById<Button>(R.id.bSalir)
+        bSalir.setOnClickListener { salirMenu(null) }
     }
 
     fun lanzarAcercaDe(view: View?) {
         startActivity(Intent(this, Acerca::class.java))
+    }
+
+    fun salirMenu(view: View?) {
+        finish()
     }
 }
