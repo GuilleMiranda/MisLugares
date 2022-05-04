@@ -16,6 +16,6 @@
     <string name="hintUrl">Url</string>
     <string name="labelComentario">Comment</string>
     <string name="hintComentario">Comment</string>
-    <string name="acerca" >This example was developed as an example to show how we can launch an activity from the main activity</string>
-
+    <string name="acerca">This example was developed as an example to show how we can launch an activity from the main activity</string>
+    <string name="buscar">Search</string>
 </resources>

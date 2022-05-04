@@ -2,4 +2,5 @@
 <resources>
     <dimen name="margen">10dp</dimen>
     <dimen name="texto">18sp</dimen>
+    <dimen name="tamano_iconos">40dp</dimen>
 </resources>

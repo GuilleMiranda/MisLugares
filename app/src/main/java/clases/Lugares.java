@@ -70,8 +70,8 @@ public class Lugares implements Serializable {
         "Avda. Bruno Guggiari, Lambaré",
         new GeoPunto(-25.324415, -57.6189539),
         R.drawable.petrobras,
-        "N. E.",
-        "N. E.",
+        "N.E.",
+        "N.E.",
         "Mala atención al cliente",
         2,
         TipoLugar.GASOLINERA

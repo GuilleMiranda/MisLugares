@@ -15,7 +15,7 @@
         android:paddingRight="10dp">
 
         <TextView
-            android:id="@+id/tvNombre"
+            android:id="@+id/tvNombreLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="@string/labelNombre" />
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/tvDireccion"
+            android:id="@+id/tvDireccionLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="@string/labelDireccion" />
@@ -54,7 +54,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/tvTelefono"
+            android:id="@+id/tvTelefonoLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="@string/labelTelefono" />
@@ -68,7 +68,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/tvUrl"
+            android:id="@+id/tvUrlLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="@string/labelUrl" />
@@ -82,7 +82,7 @@
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/tvComentario"
+            android:id="@+id/tvComentarioLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="@string/labelComentario" />

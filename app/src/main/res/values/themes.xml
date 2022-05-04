@@ -19,6 +19,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
     </style>
+
     <style name="EstiloBoton.Alternativo">
         <item name="android:textSize">@dimen/texto</item>
     </style>

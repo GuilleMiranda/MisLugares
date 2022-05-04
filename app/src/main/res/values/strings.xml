@@ -15,5 +15,14 @@
     <string name="hintUrl">Url</string>
     <string name="labelComentario">Comentario</string>
     <string name="hintComentario">Comentario</string>
-    <string name="acerca" >Este programa ha sido desarrollado como ejemplo para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
+    <string name="acerca">Este programa ha sido desarrollado como ejemplo para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
+    <string name="buscar">Buscar</string>
+    <string name="nombre_lugar">Nombre del lugar</string>
+    <string name="tipo_lugar">Tipo Lugar</string>
+    <string name="labelFecha">Fecha</string>
+    <string name="labelHora">Hora</string>
+    <string name="labelLugar">Lugar</string>
+    <string name="camara">Camara</string>
+    <string name="galeria">Galeria</string>
+    <string name="valoracion">Valoracion</string>
 </resources>

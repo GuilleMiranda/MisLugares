@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MisLugares">
         <activity
+            android:name=".VistaLugar"
+            android:exported="false" />
+        <activity
             android:name=".Acerca"
             android:exported="false"
-            android:theme="@style/dialogo"/>
+            android:theme="@style/dialogo" />
         <activity
             android:name=".EdicionLugar"
             android:exported="false" />
@@ -21,6 +24,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
