@@ -7,6 +7,8 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import clases.Lugares
 
 class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
@@ -22,8 +24,9 @@ class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
 
     val bMostrar = findViewById<Button>(R.id.bMostrar)
     bMostrar.setOnClickListener {
-      abrirVistaLugar(1)
-//            mostrarLugares()
+      abrirDialogo()
+//    abrirVistaLugar(1)
+//    mostrarLugares()
     }
   }
 
@@ -55,6 +58,21 @@ class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
       }
       else -> super.onOptionsItemSelected(item)
     }
+  }
+
+  fun abrirDialogo() {
+    val entrada = EditText(this)
+    entrada.setText("0")
+    val dialogo = AlertDialog.Builder(this)
+    dialogo.setTitle("Selección de lugar")
+    dialogo.setMessage("Indicar posición:")
+    dialogo.setView(entrada)
+    dialogo.setPositiveButton("OK") { dialog, whichButton ->
+      val posicion = entrada.text.toString().toInt()
+      abrirVistaLugar(posicion)
+    }
+    dialogo.setNegativeButton("Cancelar", null)
+    dialogo.show()
   }
 
   /*

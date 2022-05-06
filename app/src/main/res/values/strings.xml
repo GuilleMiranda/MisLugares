@@ -25,4 +25,10 @@
     <string name="camara">Camara</string>
     <string name="galeria">Galeria</string>
     <string name="valoracion">Valoracion</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="compartir">Compartir</string>
+    <string name="llegar">Llegar</string>
+    <string name="editar">Editar</string>
+    <string name="borrar">Borrar</string>
 </resources>
