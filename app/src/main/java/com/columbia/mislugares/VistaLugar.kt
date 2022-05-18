@@ -1,10 +1,7 @@
 package com.columbia.mislugares
 
 import android.content.Intent
-import android.media.Image
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.TestLooperManager
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -13,6 +10,7 @@ import android.widget.LinearLayout
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import clases.Lugar
 import java.text.DateFormat
 import java.text.ParseException
