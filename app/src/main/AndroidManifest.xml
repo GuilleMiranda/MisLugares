@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MisLugares">
         <activity
+            android:name=".ListaLugar"
+            android:exported="false" />
+        <activity
             android:name=".VistaLugar"
             android:exported="false" />
         <activity

@@ -1,17 +1,17 @@
 package com.columbia.mislugares
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.RatingBar
-import android.widget.TextView
+import android.widget.*
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import clases.Lugar
+import clases.Lugares
 import java.text.DateFormat
 import java.text.ParseException
 import java.text.SimpleDateFormat
@@ -93,7 +93,7 @@ class VistaLugar : AppCompatActivity() {
         true
       }
       R.id.accion_editar -> {
-        //editarLugar()
+        editarLugar()
         true
       }
       R.id.accion_borrar -> {
@@ -122,11 +122,57 @@ class VistaLugar : AppCompatActivity() {
   private fun abrirDialogo() {
     AlertDialog.Builder(this).setTitle("Borrado de lugar")
       .setMessage("¿Está seguro de que desea eliminar este lugar?")
-      .setPositiveButton("Confirmar") { dialog, whichButton -> borrarLugar() }
+      .setPositiveButton("Confirmar") { _, _ -> borrarLugar() }
       .setNegativeButton("Cancelar", null).show()
   }
 
+  private fun editarLugar() {
+    val i = Intent(this, EdicionLugar::class.java)
+    i.putExtra("Lugar", lugar)
+    i.putExtra("Posicion", posicion)
+    edicion_lugar.launch(i)
+  }
+
+  private fun actualizarVistas() {
+    val tvNombreLugar = findViewById<TextView>(R.id.tvNombreLugar)
+    tvNombreLugar.text = lugar.nombre
+
+    val ivTipoLugar = findViewById<ImageView>(R.id.ivTipoLugar)
+    ivTipoLugar.setImageResource(lugar.tipoLugar.recurso)
+
+    val tvTipoLugar = findViewById<TextView>(R.id.tvTipoLugar)
+    tvTipoLugar.text = lugar.tipoLugar.texto
+
+    val tvDireccion = findViewById<TextView>(R.id.tvDireccion)
+    tvDireccion.text = lugar.direccion
+
+    val lltelefono = findViewById<LinearLayout>(R.id.llTelefono)
+    if (lugar.telefono.equals("N.E.")) {
+      lltelefono.visibility = View.GONE
+    } else {
+      val tvTelefono = findViewById<TextView>(R.id.tvTelefono)
+      tvTelefono.text = lugar.telefono
+    }
+
+    val tvUrl = findViewById<TextView>(R.id.tvUrl)
+    tvUrl.text = lugar.url
+
+    val tvComentario = findViewById<TextView>(R.id.tvComentario)
+    tvComentario.text = lugar.comentario
+  }
+
+  val edicion_lugar = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+    if (it.resultCode == Activity.RESULT_OK) {
+      lugar = it.data?.getSerializableExtra("Lugar") as Lugar
+      Lugares.actualizar(posicion, lugar)
+      actualizarVistas()
+    } else {
+      Toast.makeText(this, "Edición del lugar cancelado", Toast.LENGTH_LONG).show()
+    }
+  }
+
   private fun borrarLugar() {
-    null;
+    Lugares.borrar(posicion)
+    finish()
   }
 }

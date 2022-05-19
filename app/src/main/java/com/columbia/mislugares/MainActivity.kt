@@ -1,5 +1,6 @@
 package com.columbia.mislugares
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +9,9 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
+import clases.Lugar
 import clases.Lugares
 
 class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
@@ -24,9 +27,9 @@ class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
 
     val bMostrar = findViewById<Button>(R.id.bMostrar)
     bMostrar.setOnClickListener {
-      abrirDialogo()
+//      abrirDialogo()
 //    abrirVistaLugar(1)
-//    mostrarLugares()
+    mostrarLugares()
     }
   }
 
@@ -67,7 +70,7 @@ class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
     dialogo.setTitle("Selección de lugar")
     dialogo.setMessage("Indicar posición:")
     dialogo.setView(entrada)
-    dialogo.setPositiveButton("OK") { dialog, whichButton ->
+    dialogo.setPositiveButton("OK") { _, _ ->
       val posicion = entrada.text.toString().toInt()
       abrirVistaLugar(posicion)
     }
@@ -75,9 +78,15 @@ class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
     dialogo.show()
   }
 
-  /*
-  * override fun onClick(p0: View?) {
-  *   if (p0.id == bInicia.id) ...
-  * }
-  * */
+  fun mostrarLugares() {
+    val i = Intent(this, ListaLugar::class.java)
+    getResult.launch(i)
+  }
+
+  private val getResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+    if (it.resultCode == Activity.RESULT_OK) {
+      val lugar = it.data?.getSerializableExtra("Lugar") as Lugar
+      Lugares.agregar(lugar)
+    }
+  }
 }

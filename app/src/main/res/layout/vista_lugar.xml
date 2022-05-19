@@ -44,7 +44,8 @@
                     android:id="@+id/tvTipoLugar"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:text="@string/tipo_lugar" />
             </LinearLayout>
@@ -60,13 +61,14 @@
                     android:layout_width="@dimen/tamano_iconos"
                     android:layout_height="@dimen/tamano_iconos"
                     android:layout_weight="0"
-                    app:srcCompat="@android:drawable/ic_menu_myplaces" />
+                    app:srcCompat="@drawable/ic_baseline_place_24" />
 
                 <TextView
                     android:id="@+id/tvDireccion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:text="@string/labelDireccion"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
@@ -81,13 +83,14 @@
                     android:id="@+id/ivTelefono"
                     android:layout_width="@dimen/tamano_iconos"
                     android:layout_height="@dimen/tamano_iconos"
-                    app:srcCompat="@android:drawable/ic_menu_call" />
+                    app:srcCompat="@drawable/ic_baseline_phone_24" />
 
                 <TextView
                     android:id="@+id/tvTelefono"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:text="@string/labelTelefono"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
@@ -104,13 +107,14 @@
                     android:layout_width="@dimen/tamano_iconos"
                     android:layout_height="@dimen/tamano_iconos"
                     android:layout_weight="0"
-                    app:srcCompat="@android:drawable/ic_menu_mapmode" />
+                    app:srcCompat="@drawable/ic_baseline_link_24" />
 
                 <TextView
                     android:id="@+id/tvUrl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:text="@string/labelUrl"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
@@ -127,13 +131,14 @@
                     android:layout_width="@dimen/tamano_iconos"
                     android:layout_height="@dimen/tamano_iconos"
                     android:layout_weight="0"
-                    app:srcCompat="@android:drawable/ic_menu_info_details" />
+                    app:srcCompat="@drawable/ic_baseline_info_24" />
 
                 <TextView
                     android:id="@+id/tvComentario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:text="@string/labelComentario"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
@@ -158,13 +163,14 @@
                         android:layout_width="@dimen/tamano_iconos"
                         android:layout_height="@dimen/tamano_iconos"
                         android:layout_weight="0"
-                        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+                        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
 
                     <TextView
                         android:id="@+id/tvFecha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
                         android:text="@string/labelFecha"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
                 </LinearLayout>
@@ -182,13 +188,14 @@
                         android:layout_height="@dimen/tamano_iconos"
                         android:layout_weight="0"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        app:srcCompat="@drawable/otros" />
+                        app:srcCompat="@drawable/ic_baseline_access_time_24" />
 
                     <TextView
                         android:id="@+id/tvHora"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
                         android:text="@string/labelHora" />
                 </LinearLayout>
             </LinearLayout>
@@ -219,7 +226,7 @@
                     android:id="@+id/llOpciones"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:orientation="horizontal">
 
                     <ImageView
