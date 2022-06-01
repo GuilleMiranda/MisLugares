@@ -18,11 +18,11 @@
         android:text="@string/mostrar"/>
 
     <Button
-        android:id="@+id/bPreferencias"
+        android:id="@+id/bRegistrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/EstiloBoton"
-        android:text="@string/preferencias"
+        android:text="@string/registrar"
         />
 
     <Button

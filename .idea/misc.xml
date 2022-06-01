@@ -5,15 +5,18 @@
       <map>
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1775" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1775" />
+        <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/drawable/spinner_custom.xml" value="0.2555" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/layout-land/activity_main.xml" value="0.21164021164021163" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/layout/acerca.xml" value="0.8" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/layout/activity_main.xml" value="0.1956521739130435" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/layout/edicion_lugar.xml" value="0.1956521739130435" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/layout/elemento_lista.xml" value="0.2" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/layout/lista_lugar.xml" value="0.25" />
+        <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/layout/registrar_lugar.xml" value="0.4" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/layout/vista_lugar.xml" value="0.22826086956521738" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/menu/activity_main.xml" value="0.25" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/menu/edicion_lugar.xml" value="0.25" />
+        <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/menu/registrar_lugar.xml" value="0.536" />
         <entry key="..\:/repos/uni/pr4/MisLugares/app/src/main/res/menu/vista_lugar.xml" value="0.25" />
         <entry key="..\:/repos/uni/pr4/clase2/MisLugares/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
         <entry key="..\:/repos/uni/pr4/clase2/MisLugares/app/src/main/res/layout/activity_main.xml" value="0.25" />

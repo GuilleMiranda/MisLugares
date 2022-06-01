@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.result.contract.ActivityResultContracts
@@ -22,6 +21,9 @@ class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
     val bAcerca = findViewById<Button>(R.id.bAcercaDe)
     bAcerca.setOnClickListener { lanzarAcercaDe() }
 
+    val bRegistrar = findViewById<Button>(R.id.bRegistrar)
+    bRegistrar.setOnClickListener { registrarLugar() }
+
     val bSalir = findViewById<Button>(R.id.bSalir)
     bSalir.setOnClickListener { salirMenu() }
 
@@ -31,6 +33,11 @@ class MainActivity : AppCompatActivity() /*View.OnClickListener*/{
 //    abrirVistaLugar(1)
     mostrarLugares()
     }
+  }
+
+
+  private fun registrarLugar() {
+    startActivity(Intent(this, RegistrarLugar::class.java))
   }
 
   private fun lanzarAcercaDe() {

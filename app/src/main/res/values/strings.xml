@@ -31,4 +31,6 @@
     <string name="llegar">Llegar</string>
     <string name="editar">Editar</string>
     <string name="borrar">Borrar</string>
+    <string name="mapa">Mapa</string>
+    <string name="registrar">Registrar</string>
 </resources>

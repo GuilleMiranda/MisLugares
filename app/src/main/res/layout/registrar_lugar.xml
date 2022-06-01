@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrarLugar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvNombreRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelNombre" />
+
+            <EditText
+                android:id="@+id/etNombreRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hintNombre"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tvTipoRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelTipo" />
+
+            <Spinner
+                android:id="@+id/sTipoRL"
+                android:background="@drawable/spinner_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvDireccionRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelDireccion" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etDireccionRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/hintDireccion"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/bMapaRL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mapa" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTelefonoRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelTelefono" />
+
+            <EditText
+                android:id="@+id/etTelefonoRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hintTelefono"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tvUrlRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelUrl" />
+
+            <EditText
+                android:id="@+id/etUrlRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hintUrl"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tvComentarioRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/labelComentario" />
+
+            <EditText
+                android:id="@+id/etComentarioRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hintComentario"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
